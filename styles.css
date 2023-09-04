@@ -85,3 +85,12 @@
 .horizontal-image-section.top-margin {
   margin-top: 2px; /* Устанавливаем верхний отступ для новой секции */
 }
+/* Стили для отцентрированного текста в параграфах */
+.image-section p,
+.horizontal-image-section p {
+  text-align: center; /* Выравнивание текста по центру */
+}
+/* Стили для центрирования текста во всех абзацах */
+p {
+  text-align: center;
+}
