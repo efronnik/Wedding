@@ -112,28 +112,50 @@
             <label for="материал">Выбор материала</label>
             <form>
                 <select id="материал" name="материал">
-                    <option value="Материал 1">Материал 1</option>
-                    <option value="Материал 2">Материал 2</option>
-                    <option value="Материал 3">Материал 3</option>
+                    <option value="Материал 1">Обязательно буду!</option>
+                    <option value="Материал 2">Затрудняюсь ответить..</option>
+                    <option value="Материал 3">К сожалению, не получиться.</option>
                 </select><br><br>
             </form>
-
-            <p>Подтвердите, если сможете прийти</p>
-            <form>
-                <!-- Здесь оставьте остальные элементы вашей формы -->
-                <input type="submit" value="Отправить">
-            </form>
+            <style>
+                ul {
+                    list-style-type: none;
+                    /* Убираем маркеры списка (точки) */
+                }
+            </style>
 
             <p>Уточните Ваши предпочтения в Алкоголе, выбрав один или несколько вариантов:</p>
             <ul>
-                <li>Вино красное</li>
-                <li>Вино белое</li>
-                <li>Шампанское</li>
-                <li>Виски</li>
-                <li>Водка</li>
-                <li>Коньяк</li>
-                <li>Другое</li>
+                <li>
+                    <input type="checkbox" id="вино_красное" name="алкоголь" value="Вино красное">
+                    <label for="вино_красное">Вино красное</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="вино_белое" name="алкоголь" value="Вино белое">
+                    <label for="вино_белое">Вино белое</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="шампанское" name="алкоголь" value="Шампанское">
+                    <label for="шампанское">Шампанское</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="виски" name="алкоголь" value="Виски">
+                    <label for="виски">Виски</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="водка" name="алкоголь" value="Водка">
+                    <label for="водка">Водка</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="коньяк" name="алкоголь" value="Коньяк">
+                    <label for="коньяк">Коньяк</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="другое" name="алкоголь" value="Другое">
+                    <label for="другое">Другое</label>
+                </li>
             </ul>
+
             <!-- Кнопка отправить -->
         </section>
     </main>
