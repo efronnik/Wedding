@@ -94,3 +94,36 @@
 p {
   text-align: center;
 }
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+/* Стили для списка ol */
+ol {
+  list-style: none; /* Убираем стандартные маркеры списка */
+  counter-reset: my-counter; /* Сбрасываем счетчик */
+  padding-left: 0; /* Убираем отступ слева */
+}
+
+/* Стили для каждого элемента списка li */
+ol li {
+  position: relative; /* Задаем позицию для создания черного круга */
+  margin-bottom: 10px; /* Расстояние между элементами списка */
+}
+
+/* Стили для обводки черным кругом */
+ol li::before {
+  content: counter(my-counter); /* Вставляем текущее значение счетчика */
+  counter-increment: my-counter; /* Увеличиваем счетчик */
+  background-color: black; /* Задаем цвет фона (черный круг) */
+  color: white; /* Задаем цвет текста (белый) */
+  border-radius: 50%; /* Создаем круглую форму */
+  width: 20px; /* Задаем ширину круга */
+  height: 20px; /* Задаем высоту круга */
+  display: inline-block; /* Размещаем элемент внутри текста */
+  text-align: center; /* Выравниваем текст по центру круга */
+  margin-right: 5px; /* Расстояние между кругом и текстом */
+  font-weight: bold; /* Жирное начертание текста внутри круга */
+}
