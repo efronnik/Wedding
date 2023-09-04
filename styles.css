@@ -90,3 +90,65 @@
 .horizontal-image-section p {
   text-align: center; /* Выравнивание текста по центру */
 }
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  z-index: 2;
+}
+
+.oval {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+
+.custom-list li::before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: calc(30px + 5px + 10px);
+  transform: translateY(-1px);
+  z-index: 0;
+}
+
+.custom-list img {
+  margin-left: 88px; /* Перемещение картинки вправо на 20px, вы можете изменить это значение по вашему желанию */
+}
