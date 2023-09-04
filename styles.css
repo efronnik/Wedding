@@ -36,3 +36,11 @@
   background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон для текста */
   padding: 20px; /* Отступ вокруг текста */
 }
+@media screen and (max-width: 767px) {
+  .timer {
+    font-size: 16px; /* Уменьшьте размер шрифта для маленьких экранов */
+  }
+  .timer-item-divider {
+    display: none; /* Уберите вертикальные линии между элементами для экономии места */
+  }
+}
