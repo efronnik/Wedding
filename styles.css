@@ -170,3 +170,45 @@ li {
 input[type='checkbox'] {
   margin-right: 10px; /* Отступ справа от чекбокса для размещения его слева */
 }
+/* Стили для контейнера */
+.container {
+  width: 100vw; /* 100% ширины экрана */
+  height: 100vh; /* 100% высоты экрана */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Настройте другие стили для контейнера по вашему усмотрению */
+  padding: 20px; /* Внутренние отступы для контейнера */
+  box-sizing: border-box; /* Учитываем внутренние отступы в общей ширине и высоте */
+}
+
+/* Стили для инпутов */
+input[type='text'] {
+  width: 1100px; /* Ширина инпута */
+  height: 40px; /* Высота инпута */
+  /* Другие стили для инпутов по вашему усмотрению */
+}
+
+/* Стили для элементов в контейнере */
+label {
+  text-align: center;
+  display: block;
+}
+
+form {
+  text-align: center;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 10px; /* Уменьшаем внутренние отступы на мобильных устройствах */
+  }
+
+  /* Уменьшаем размеры инпутов на мобильных устройствах */
+  input[type='text'] {
+    width: 350px;
+    height: 30px;
+  }
+}

@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Стили для центрирования текста */
-        label {
-            text-align: center;
-            display: block;
-        }
-    </style>
 </head>
 
 <body>
@@ -105,25 +98,27 @@
             <h3>ДРЕСС КОД</h3>
             <p>мы будем рады, если в своих нарядах вы поддержите цветовую гамму нашей свадьбы</p>
             <h3>Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
-            <p>Подтвердите, если сможете прийти</p>
-            <label for="имя">Имя</label>
-            <form>
-                <input type="text" id="имя" name="имя"><br><br>
-            </form>
+            <div class="container">
+                <p>Подтвердите, если сможете прийти</p>
+                <label for="имя">Имя</label>
+                <form>
+                    <input type="text" id="имя" name="имя"><br><br>
+                </form>
 
-            <label for="фамилия">Фамилия</label>
-            <form>
-                <input type="text" id="фамилия" name="фамилия"><br><br>
-            </form>
+                <label for="фамилия">Фамилия</label>
+                <form>
+                    <input type="text" id="фамилия" name="фамилия"><br><br>
+                </form>
 
-            <label for="материал">Подтвердите свое присутсвие</label>
-            <form>
-                <select id="материал" name="материал">
-                    <option value="Материал 1">Обязательно буду!</option>
-                    <option value="Материал 2">Затрудняюсь ответить..</option>
-                    <option value="Материал 3">К сожалению, не получиться.</option>
-                </select><br><br>
-            </form>
+                <label for="материал">Подтвердите свое присутсвие</label>
+                <form>
+                    <select id="материал" name="материал">
+                        <option value="Материал 1">Обязательно буду!</option>
+                        <option value="Материал 2">Затрудняюсь ответить..</option>
+                        <option value="Материал 3">К сожалению, не получиться.</option>
+                    </select><br><br>
+                </form>
+            </div>
             <style>
                 ul {
                     list-style-type: none;
