@@ -228,3 +228,7 @@ select {
     /* Другие стили для выпадающего списка на мобильных устройствах */
   }
 }
+
+.timer {
+  font-family: 'Times New Roman', serif; /* Применяем шрифт Times New Roman к таймеру */
+}
