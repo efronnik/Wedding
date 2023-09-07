@@ -103,22 +103,46 @@
                 <p>Подтвердите, если сможете прийти</p>
                 <label for="имя">Имя</label>
                 <form>
-                    <input type="text" id="имя" name="имя" value="Введите ваше имя"><br><br>
+                    <input type="text" id="имя" name="имя" value="Введите ваше имя" onfocus="clearText(this)"
+                        onblur="restoreText(this)"><br><br>
                 </form>
-
                 <label for="фамилия">Фамилия</label>
                 <form>
-                    <input type="text" id="фамилия" name="фамилия" value="Введите вашу фамилию"><br><br>
+                    <input type="text" id="фамилия" name="фамилия" value="Введите вашу фамилию"
+                        onfocus="clearText(this)" onblur="restoreText(this)"><br><br>
                 </form>
 
-                <label for="материал">Подтвердите свое присутсвие</label>
+                <label for="материал">Подтвердите свое присутствие</label>
                 <form>
                     <select id="материал" name="материал">
                         <option value="Материал 1">Обязательно буду!</option>
                         <option value="Материал 2">Затрудняюсь ответить..</option>
-                        <option value="Материал 3">К сожалению, не получиться.</option>
+                        <option value="Материал 3">К сожалению, не получится.</option>
                     </select><br><br>
                 </form>
+
+                <script>
+                    function clearText(inputElement) {
+                        inputElement.value = "";
+                        inputElement.style.opacity = "1";
+                    }
+
+                    function restoreText(inputElement) {
+                        if (inputElement.value === "") {
+                            inputElement.value = "Введите ваше " + inputElement.name;
+                            inputElement.style.opacity = "0.5";
+                        }
+                    }
+                </script>
+
+                <style>
+                    input[type="text"],
+                    select {
+                        border-radius: 8px;
+                        border: 2px solid black;
+                        /* Черный контур */
+                    }
+                </style>
             </div>
             <style>
                 ul {
