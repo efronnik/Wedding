@@ -106,6 +106,7 @@
                     <input type="text" id="имя" name="имя" value="Введите ваше имя" onfocus="clearText(this)"
                         onblur="restoreText(this)"><br><br>
                 </form>
+
                 <label for="фамилия">Фамилия</label>
                 <form>
                     <input type="text" id="фамилия" name="фамилия" value="Введите вашу фамилию"
@@ -141,8 +142,18 @@
                         border-radius: 8px;
                         border: 2px solid black;
                         /* Черный контур */
+                        font-size: 16px;
+                        /* Размер текста */
+                    }
+
+                    label {
+                        margin-bottom: 10px;
+                        /* Увеличиваем расстояние между текстом и контейнерами */
+                        display: block;
+                        /* Делаем label блочным элементом, чтобы margin работал верно */
                     }
                 </style>
+
             </div>
             <style>
                 ul {
@@ -189,6 +200,30 @@
                     <label for="другое">Другое</label>
                 </li>
             </ul>
+            <style>
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+
+                li {
+                    margin: 10px 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                input[type="checkbox"] {
+                    transform: scale(1.5);
+                    border: 2px solid black;
+                    vertical-align: middle;
+                    margin-bottom: 3px;
+                    /* Увеличиваем расстояние между квадратиком и текстом */
+                }
+
+                label {
+                    vertical-align: middle;
+                }
+            </style>
         </section>
         <button type="button">Отправить</button>
     </main>
