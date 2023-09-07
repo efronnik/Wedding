@@ -111,7 +111,15 @@
             <h3 class="centered-heading">ДРЕСС КОД</h3>
             <p style="text-align: center;">Мы будем рады, если в своих нарядах вы поддержите цветовую гамму нашей
                 свадьбы</p>
-            <h3>Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
+            <img src="./images/Палетка.png" alt="Палетка" class="centered-image" />
+            <style>
+                .centered-image {
+                    display: block;
+                    margin: 0 auto;
+                }
+            </style>
+
+            <h3 class="centered-heading">Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
             <div class="container">
                 <p>Подтвердите, если сможете прийти</p>
                 <label for="имя">Имя</label>
@@ -238,12 +246,40 @@
                 }
             </style>
         </section>
-        <button type="button">Отправить</button>
+        <button type="button" class="custom-button">Отправить</button>
+        <style>
+            .custom-button {
+                display: block;
+                margin: 0 auto;
+                padding: 10px 20px;
+                /* Задаем размеры (10px вертикально, 20px горизонтально) */
+                background-color: #DDA0DD;
+                /* Задаем цвет фона */
+                color: white;
+                /* Задаем цвет текста */
+                border: none;
+                /* Убираем границу */
+                border-radius: 5px;
+                /* Закругляем углы */
+                cursor: pointer;
+                /* Делаем курсор при наведении */
+                transition: background-color 0.3s;
+                /* Добавляем анимацию перехода цвета фона */
+            }
+
+            .custom-button:hover {
+                background-color: #DA70D6;
+                /* Изменяем цвет фона при наведении */
+            }
+        </style>
+
     </main>
     <footer>
         <p>Свяжитесь с нами по всем вопросам:</p>
         <address>
-
+            <nav>
+                <a tel="+48886538855">+48 (886) 53-88-55</a>
+            </nav>
         </address>
     </footer>
 </body>
