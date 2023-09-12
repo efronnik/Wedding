@@ -232,3 +232,11 @@ select {
 .timer {
   font-family: 'Times New Roman', serif; /* Применяем шрифт Times New Roman к таймеру */
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
