@@ -18,11 +18,12 @@
     </style>
     <script>
         function submitForm() {
+            console.log('Функция submitForm вызвана');
             var имя = document.getElementById('имя').value;
             var фамилия = document.getElementById('фамилия').value;
             var материал = document.getElementById('материал').value;
 
-            if (имя === '' || фамилия === '' || материал === '') {
+            if (имя.length < 5 || фамилия.length < 5 || материал === '') {
                 var подсказка = document.getElementById('подсказка');
                 подсказка.style.display = 'block'; // Показываем подсказку
                 return;
@@ -154,14 +155,12 @@
             <h3 class="centered-heading">Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
             <div class="container">
                 <p style="font-size: 18px;">Подтвердите, если сможете прийти</p>
-                <label for="имя">Имя</label>
-                <input type="text" id="имя" name="имя" placeholder="Введите ваше имя" maxlength="20"
-                    pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
-
-                <label for="фамилия">Фамилия</label>
-                <input type="text" id="фамилия" name="фамилия" placeholder="Введите вашу фамилию" maxlength="20"
-                    pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
-
+                <label for="имя">Имя (минимум 5 символов)</label>
+                <input type="text" id="имя" name="имя" placeholder="Введите ваше имя (минимум 5 символов)"
+                    maxlength="20" pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
+                <label for="фамилия">Фамилия (минимум 5 символов)</label>
+                <input type="text" id="фамилия" name="фамилия" placeholder="Введите вашу фамилию (минимум 5 символов)"
+                    maxlength="20" pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
                 <label for="материал">Подтвердите свое присутствие</label>
                 <form>
                     <select id="материал" name="материал">
@@ -274,7 +273,8 @@
                 }
             </style>
         </section>
-        <button type="button" class="custom-button" id="submitButton" disabled onclick="submitForm()">Отправить</button>
+        <button type="button" class="custom-button" id="submitButton" onclick="submitForm()">Отправить</button>
+        <div id="подсказка" class="подсказка" style="display:none;">Пожалуйста, заполните все поля</div>
         <style>
             .custom-button {
                 display: block;

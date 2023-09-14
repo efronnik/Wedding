@@ -253,3 +253,10 @@ a {
 .link-footer:focus {
   color: #ffa07a;
 }
+
+.подсказка {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
