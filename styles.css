@@ -23,7 +23,7 @@ h1 {
   margin: 0 5px;
 }
 .header {
-  background-image: url('./images/beautiful-butterfly-in-nature_23-2150445580.avif');
+  background-image: url('./images/IMG_5829.jpeg');
   background-size: cover; /* Масштабировать изображение, чтобы оно заполнило весь блок */
   background-position: center; /* Центрировать изображение по горизонтали и вертикали */
   height: 300px; /* Высота вашего заголовка, можно настроить на свой вкус */
@@ -235,10 +235,6 @@ select {
 
 .timer {
   font-family: 'Times New Roman', serif; /* Применяем шрифт Times New Roman к таймеру */
-}
-
-ul {
-  list-style: none;
 }
 
 a {
