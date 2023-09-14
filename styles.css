@@ -240,3 +240,16 @@ select {
 a {
   text-decoration: none;
 }
+
+.link-footer {
+  color: #000000;
+}
+
+.footer {
+  font-style: normal;
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  color: #ffa07a;
+}
