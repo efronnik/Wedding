@@ -16,6 +16,22 @@
             /* Применяем шрифт Montserrat к всему сайту */
         }
     </style>
+    <script>
+        function submitForm() {
+            var имя = document.getElementById('имя').value;
+            var фамилия = document.getElementById('фамилия').value;
+            var материал = document.getElementById('материал').value;
+
+            if (имя === '' || фамилия === '' || материал === '') {
+                var подсказка = document.getElementById('подсказка');
+                подсказка.style.display = 'block'; // Показываем подсказку
+                return;
+            }
+
+            // Перенаправляем на указанную страницу
+            window.location.href = './invite.html';
+        }
+    </script>
 </head>
 
 <body>
@@ -138,12 +154,13 @@
             <h3 class="centered-heading">Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
             <div class="container">
                 <p style="font-size: 18px;">Подтвердите, если сможете прийти</p>
-
                 <label for="имя">Имя</label>
-                <input type="text" id="имя" name="имя" placeholder="Введите ваше имя"><br><br>
+                <input type="text" id="имя" name="имя" placeholder="Введите ваше имя" maxlength="20"
+                    pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
 
                 <label for="фамилия">Фамилия</label>
-                <input type="text" id="фамилия" name="фамилия" placeholder="Введите вашу фамилию"><br><br>
+                <input type="text" id="фамилия" name="фамилия" placeholder="Введите вашу фамилию" maxlength="20"
+                    pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
 
                 <label for="материал">Подтвердите свое присутствие</label>
                 <form>
@@ -257,7 +274,7 @@
                 }
             </style>
         </section>
-        <button type="button" class="custom-button">Отправить</button>
+        <button type="button" class="custom-button" id="submitButton" disabled onclick="submitForm()">Отправить</button>
         <style>
             .custom-button {
                 display: block;
@@ -283,7 +300,6 @@
                 /* Изменяем цвет фона при наведении */
             }
         </style>
-
     </main>
     <footer>
         <address class="footer">
