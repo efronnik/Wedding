@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+h1 {
+  font-family: 'Dancing Script';
+}
+
 .timer-digit {
   margin: 0 5px;
 }
