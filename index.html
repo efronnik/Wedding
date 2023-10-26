@@ -107,7 +107,7 @@
                     <div class="circle">3</div>
                     <div class="oval">
                         <div class="text">
-                            <h3>Банкет <br> 17:00</h3>
+                            <h3>Банкет <br> 15:00</h3>
                         </div>
                     </div>
                 </li>
@@ -139,139 +139,127 @@
                 }
             </style>
         </section>
-        <section>
-            <h3 class="centered-heading">ДРЕСС КОД</h3>
-            <p style="text-align: center;" style="font-size: 18px;">Мы будем рады, если в своих нарядах вы поддержите
-                цветовую гамму нашей
-                свадьбы</p>
-            <img src="./images/Палетка.png" alt="Палетка" class="centered-image" />
+
+        <h3 class="centered-heading">Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
+        <div class="container">
+            <p style="font-size: 18px;">Подтвердите, если сможете прийти</p>
+            <label for="имя">Имя (минимум 5 символов)</label>
+            <input type="text" id="имя" name="имя" placeholder="Введите ваше имя (минимум 5 символов)" maxlength="20"
+                pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
+            <label for="фамилия">Фамилия (минимум 5 символов)</label>
+            <input type="text" id="фамилия" name="фамилия" placeholder="Введите вашу фамилию (минимум 5 символов)"
+                maxlength="20" pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
+            <label for="материал">Подтвердите свое присутствие</label>
+            <form>
+                <select id="материал" name="материал">
+                    <option value="Материал 1">Обязательно буду!</option>
+                    <option value="Материал 2">Затрудняюсь ответить..</option>
+                    <option value="Материал 3">К сожалению, не получится.</option>
+                </select><br><br>
+            </form>
+
+            <script>
+                function clearText(inputElement) {
+                    inputElement.value = "";
+                    inputElement.style.opacity = "1";
+                }
+
+                function restoreText(inputElement) {
+                    if (inputElement.value === "") {
+                        inputElement.value = "Введите ваше " + inputElement.name;
+                        inputElement.style.opacity = "0.5";
+                    }
+                }
+            </script>
+
             <style>
-                .centered-image {
-                    display: block;
-                    margin: 0 auto;
-                }
-            </style>
-
-            <h3 class="centered-heading">Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
-            <div class="container">
-                <p style="font-size: 18px;">Подтвердите, если сможете прийти</p>
-                <label for="имя">Имя (минимум 5 символов)</label>
-                <input type="text" id="имя" name="имя" placeholder="Введите ваше имя (минимум 5 символов)"
-                    maxlength="20" pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
-                <label for="фамилия">Фамилия (минимум 5 символов)</label>
-                <input type="text" id="фамилия" name="фамилия" placeholder="Введите вашу фамилию (минимум 5 символов)"
-                    maxlength="20" pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
-                <label for="материал">Подтвердите свое присутствие</label>
-                <form>
-                    <select id="материал" name="материал">
-                        <option value="Материал 1">Обязательно буду!</option>
-                        <option value="Материал 2">Затрудняюсь ответить..</option>
-                        <option value="Материал 3">К сожалению, не получится.</option>
-                    </select><br><br>
-                </form>
-
-                <script>
-                    function clearText(inputElement) {
-                        inputElement.value = "";
-                        inputElement.style.opacity = "1";
-                    }
-
-                    function restoreText(inputElement) {
-                        if (inputElement.value === "") {
-                            inputElement.value = "Введите ваше " + inputElement.name;
-                            inputElement.style.opacity = "0.5";
-                        }
-                    }
-                </script>
-
-                <style>
-                    input[type="text"],
-                    select {
-                        border-radius: 8px;
-                        border: 2px solid black;
-                        /* Черный контур */
-                        font-size: 16px;
-                        /* Размер текста */
-                    }
-
-                    label {
-                        margin-bottom: 10px;
-                        /* Увеличиваем расстояние между текстом и контейнерами */
-                        display: block;
-                        /* Делаем label блочным элементом, чтобы margin работал верно */
-                    }
-                </style>
-
-            </div>
-            <style>
-                ul {
-                    list-style-type: none;
-                    /* Убираем маркеры списка (точки) */
-                    padding: 0;
-                    /* Убираем отступы вокруг списка */
-                }
-
-                li {
-                    margin-left: -3px;
-                    /* Смещение влево, чтобы скрыть маркеры */
-                }
-            </style>
-
-            <p style="font-size: 18px;">Уточните Ваши предпочтения в Алкоголе, выбрав один или несколько вариантов:</p>
-            <ul>
-                <li>
-                    <input type="checkbox" id="вино_красное" name="алкоголь" value="Вино красное">
-                    <label for="вино_красное">Вино красное</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="вино_белое" name="алкоголь" value="Вино белое">
-                    <label for="вино_белое">Вино белое</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="шампанское" name="алкоголь" value="Шампанское">
-                    <label for="шампанское">Шампанское</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="виски" name="алкоголь" value="Виски">
-                    <label for="виски">Виски</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="водка" name="алкоголь" value="Водка">
-                    <label for="водка">Водка</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="коньяк" name="алкоголь" value="Коньяк">
-                    <label for="коньяк">Коньяк</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="другое" name="алкоголь" value="Другое">
-                    <label for="другое">Другое</label>
-                </li>
-            </ul>
-            <style>
-                ul {
-                    list-style-type: none;
-                    padding: 0;
-                }
-
-                li {
-                    margin: 10px 0;
-                    display: flex;
-                    align-items: center;
-                }
-
-                input[type="checkbox"] {
-                    transform: scale(1.5);
+                input[type="text"],
+                select {
+                    border-radius: 8px;
                     border: 2px solid black;
-                    vertical-align: middle;
-                    margin-bottom: 3px;
-                    /* Увеличиваем расстояние между квадратиком и текстом */
+                    /* Черный контур */
+                    font-size: 16px;
+                    /* Размер текста */
                 }
 
                 label {
-                    vertical-align: middle;
+                    margin-bottom: 10px;
+                    /* Увеличиваем расстояние между текстом и контейнерами */
+                    display: block;
+                    /* Делаем label блочным элементом, чтобы margin работал верно */
                 }
             </style>
+
+        </div>
+        <style>
+            ul {
+                list-style-type: none;
+                /* Убираем маркеры списка (точки) */
+                padding: 0;
+                /* Убираем отступы вокруг списка */
+            }
+
+            li {
+                margin-left: -3px;
+                /* Смещение влево, чтобы скрыть маркеры */
+            }
+        </style>
+
+        <p style="font-size: 18px;">Уточните Ваши предпочтения в Алкоголе, выбрав один или несколько вариантов:</p>
+        <ul>
+            <li>
+                <input type="checkbox" id="вино_красное" name="алкоголь" value="Вино красное">
+                <label for="вино_красное">Вино красное</label>
+            </li>
+            <li>
+                <input type="checkbox" id="вино_белое" name="алкоголь" value="Вино белое">
+                <label for="вино_белое">Вино белое</label>
+            </li>
+            <li>
+                <input type="checkbox" id="шампанское" name="алкоголь" value="Шампанское">
+                <label for="шампанское">Шампанское</label>
+            </li>
+            <li>
+                <input type="checkbox" id="виски" name="алкоголь" value="Виски">
+                <label for="виски">Виски</label>
+            </li>
+            <li>
+                <input type="checkbox" id="водка" name="алкоголь" value="Водка">
+                <label for="водка">Водка</label>
+            </li>
+            <li>
+                <input type="checkbox" id="коньяк" name="алкоголь" value="Коньяк">
+                <label for="коньяк">Коньяк</label>
+            </li>
+            <li>
+                <input type="checkbox" id="другое" name="алкоголь" value="Другое">
+                <label for="другое">Другое</label>
+            </li>
+        </ul>
+        <style>
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+            }
+
+            input[type="checkbox"] {
+                transform: scale(1.5);
+                border: 2px solid black;
+                vertical-align: middle;
+                margin-bottom: 3px;
+                /* Увеличиваем расстояние между квадратиком и текстом */
+            }
+
+            label {
+                vertical-align: middle;
+            }
+        </style>
         </section>
         <button type="button" class="custom-button" id="submitButton" onclick="submitForm()">Отправить</button>
         <div id="подсказка" class="подсказка" style="display:none;">Пожалуйста, заполните все поля</div>

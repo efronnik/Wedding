@@ -177,13 +177,11 @@ input[type='checkbox'] {
 /* Стили для контейнера */
 .container {
   width: 100vw; /* 100% ширины экрана */
-  height: 70vh; /* 100% высоты экрана */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* Настройте другие стили для контейнера по вашему усмотрению */
-  padding: 20px; /* Внутренние отступы для контейнера */
   box-sizing: border-box; /* Учитываем внутренние отступы в общей ширине и высоте */
 }
 
