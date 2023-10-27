@@ -6,6 +6,11 @@
   font-weight: bold;
 }
 
+body {
+  background-image: url('./images/background-lock.jpg');
+  background-size: cover; /* Растягиваем изображение на всю ширину и высоту */
+}
+
 h1 {
   font-family: 'Dancing Script';
 }
