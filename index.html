@@ -143,15 +143,16 @@
 
         <h3 class="centered-heading">Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
         <div class="container">
-            <p style="font-size: 18px;">Подтвердите, если сможете прийти</p>
-            <label for="имя">Имя (минимум 5 символов)</label>
-            <input type="text" id="имя" name="имя" placeholder="Введите ваше имя (минимум 5 символов)" maxlength="20"
-                pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
-            <label for="фамилия">Фамилия (минимум 5 символов)</label>
-            <input type="text" id="фамилия" name="фамилия" placeholder="Введите вашу фамилию (минимум 5 символов)"
-                maxlength="20" pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
-            <label for="материал">Подтвердите свое присутствие</label>
-            <form>
+            <form netlify>
+                <p style="font-size: 18px;">Подтвердите, если сможете прийти</p>
+                <label for="имя">Имя (минимум 5 символов)</label>
+                <input type="text" id="имя" name="имя" placeholder="Введите ваше имя (минимум 5 символов)"
+                    maxlength="20" pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
+                <label for="фамилия">Фамилия (минимум 5 символов)</label>
+                <input type="text" id="фамилия" name="фамилия" placeholder="Введите вашу фамилию (минимум 5 символов)"
+                    maxlength="20" pattern="[a-zA-Zа-яА-ЯёЁ]+"><br><br>
+                <label for="материал">Подтвердите свое присутствие</label>
+
                 <select id="материал" name="материал">
                     <option value="Материал 1">Обязательно буду!</option>
                     <option value="Материал 2">Затрудняюсь ответить..</option>
