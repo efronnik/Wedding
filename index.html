@@ -143,7 +143,7 @@
 
         <h3 class="centered-heading">Очень ждем и будем рады видеть вас на нашей свадьбе!</h3>
         <div class="container">
-            <form netlify>
+            <form action="#" netlify>
                 <p style="font-size: 18px;">Подтвердите, если сможете прийти</p>
                 <label for="имя">Имя (минимум 5 символов)</label>
                 <input type="text" id="имя" name="имя" placeholder="Введите ваше имя (минимум 5 символов)"
@@ -158,6 +158,39 @@
                     <option value="Материал 2">Затрудняюсь ответить..</option>
                     <option value="Материал 3">К сожалению, не получится.</option>
                 </select><br><br>
+                <p style="font-size: 18px; text-align: center;">Уточните Ваши предпочтения в Алкоголе, выбрав один или
+                    несколько
+                    вариантов:</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="вино_красное" name="алкоголь" value="Вино красное">
+                        <label for="вино_красное">Вино красное</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="вино_белое" name="алкоголь" value="Вино белое">
+                        <label for="вино_белое">Вино белое</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="шампанское" name="алкоголь" value="Шампанское">
+                        <label for="шампанское">Шампанское</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="виски" name="алкоголь" value="Виски">
+                        <label for="виски">Виски</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="водка" name="алкоголь" value="Водка">
+                        <label for="водка">Водка</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="коньяк" name="алкоголь" value="Коньяк">
+                        <label for="коньяк">Коньяк</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="другое" name="алкоголь" value="Другое">
+                        <label for="другое">Другое</label>
+                    </li>
+                </ul>
             </form>
 
             <script>
@@ -207,39 +240,7 @@
             }
         </style>
 
-        <p style="font-size: 18px; text-align: center;">Уточните Ваши предпочтения в Алкоголе, выбрав один или несколько
-            вариантов:</p>
-        <form netlify>
-            <ul>
-                <li>
-                    <input type="checkbox" id="вино_красное" name="алкоголь" value="Вино красное">
-                    <label for="вино_красное">Вино красное</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="вино_белое" name="алкоголь" value="Вино белое">
-                    <label for="вино_белое">Вино белое</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="шампанское" name="алкоголь" value="Шампанское">
-                    <label for="шампанское">Шампанское</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="виски" name="алкоголь" value="Виски">
-                    <label for="виски">Виски</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="водка" name="алкоголь" value="Водка">
-                    <label for="водка">Водка</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="коньяк" name="алкоголь" value="Коньяк">
-                    <label for="коньяк">Коньяк</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="другое" name="алкоголь" value="Другое">
-                    <label for="другое">Другое</label>
-                </li>
-            </ul>
+
         </form>
         <style>
             ul {
